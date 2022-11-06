@@ -1,7 +1,7 @@
 <?php
 //Database credentials
-define('SERVER','localhost');
-define('HOST','root');// id19735886_hamed
-define('PASSWD','');//k|r(6)4O=uZ{<g%>
-define('DB', 'shoppn');
+define('SERVER','us-cdbr-east-06.cleardb.net');
+define('HOST','b3538631bc305a');
+define('PASSWD','34f6d478');
+define('DB', 'heroku_2e1efbf5b39e73f');
 ?>

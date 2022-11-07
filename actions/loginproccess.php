@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
     $result = loginUser_controller($customer_email,$customer_pass);
     if ($result===false) {
         header( "Location: ../view/login.php?error=Please you typed a wrong Email or password");
-    }
+    } 
     else {
         if ($_SESSION['user_role']==1) {
             header( "Location: ../admin/dashboard.php");

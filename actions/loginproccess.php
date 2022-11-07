@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
             header( "Location: ../view/customer_dashboard.php");
         }
         
-//     }
+    }
    
 }
 

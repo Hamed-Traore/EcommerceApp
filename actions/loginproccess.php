@@ -1,9 +1,6 @@
-<?php 
-
+<?php
 include ('../controllers/customer_controller.php');
 //1- check if the button was click (isset)
-
-
 //2- Collect the data $GET and $POST
 if (isset($_POST['submit'])) {
     //echo "here";

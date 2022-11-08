@@ -5,6 +5,11 @@ use LDAP\Result;
 
 require ('../settings/db_class.php');
 //add, edit, and delete class
+/**
+ * add, edit, and delete class for customer table
+ *@author Hamed Traore
+ *@version 1.1
+ */
 
 class CustomerClass extends db_connection
 {

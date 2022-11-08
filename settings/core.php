@@ -1,13 +1,10 @@
 <?php
-function Check_login()
-{
-    session_start();
-    $user_id=$_SESSION['user_id'];
-    $user_role= $_SESSION['user_role'];
-    $user_name=$_SESSION['user_name'];
-    if (!isset($user_id)) {
-        header( "Location: ../view/login.php?error=Please you have to login !");
-    }
+session_start();
+$user_id=$_SESSION['user_id'];
+$user_role= $_SESSION['user_role'];
+$user_name=$_SESSION['user_name'];
+if (!isset($user_id)) {
+    header( "Location: ../view/login.php?error=Please you have to login !");
 }
 
 //start session

@@ -1,7 +1,6 @@
 <?php 
 include('../settings/core.php');
 include ('../functions/select_product_function.php');
-Check_login();
 ?>
 <!DOCTYPE html>
 <!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->

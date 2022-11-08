@@ -56,7 +56,7 @@
                     echo '    <tr>';
                     echo '       <td>'.$row['cat_id'].'</td>';
                     echo '       <td>'.$row['cat_name'].'</td>';
-                    echo '       <td><a href="?cat_id='.$row['cat_id'].'">Update</a> <a href="../functions/delete_function.php?id='.$row['cat_id'].'" >Delete</a></td>';
+                    echo '       <td><a href="?cat_id='.$row['cat_id'].'">Update</a> <a href="../functions/delete_function.php?cat_id='.$row['cat_id'].'" >Delete</a></td>';
                     //echo ' <td><input type="button" value="Update" name="Update" onclick="validate('.$row['pid'].')" class="btn btn-primary">  
                     //<input type="button" value="Delete" name="Delete" onclick="validate('.$row['pid'].')" class="btn btn-danger">';
                     echo '</tr>'; 

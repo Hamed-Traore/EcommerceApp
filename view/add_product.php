@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<link rel="icon" type="image/jpg" href="assets/img/icon.jpg">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>Get Shit Done Bootstrap Wizard by Creative Tim</title>
+	<title>Add product</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -62,20 +62,20 @@
 
 						<div class="wizard-navigation">
 							<ul>
-	                            <li><a href="#about" data-toggle="tab">About</a></li>
-	                            <li><a href="#account" data-toggle="tab">Account</a></li>
+	                            <li><a href="#product_info" data-toggle="tab">Product Information</a></li>
+	                            <li><a href="#description" data-toggle="tab">Description</a></li>
 	                            <li><a href="#address" data-toggle="tab">Address</a></li>
 	                        </ul>
 
 						</div>
 
                         <div class="tab-content">
-                            <div class="tab-pane" id="about">
+                            <div class="tab-pane" id="product_info">
                               <div class="row">
                                   <h4 class="info-text"> Let's start with the basic information (with validation)</h4>
                                   <div class="col-sm-4 col-sm-offset-1">
                                      <div class="picture-container">
-                                          <div class="picture">
+                                          <div class="picture ">
                                               <img src="assets/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>
                                               <input type="file" id="wizard-picture">
                                           </div>
@@ -84,12 +84,22 @@
                                   </div>
                                   <div class="col-sm-6">
                                       <div class="form-group">
-                                        <label>First Name <small>(required)</small></label>
+                                        <label>Product Name <small>(required)</small></label>
                                         <input name="firstname" type="text" class="form-control" placeholder="Andrew...">
                                       </div>
                                       <div class="form-group">
-                                        <label>Last Name <small>(required)</small></label>
-                                        <input name="lastname" type="text" class="form-control" placeholder="Smith...">
+                                        <label>Product category <small>(required)</small></label>
+                                        <select name="product_cat" type="text" class="form-control">
+                                            <option value="cat_1">first cat</option>
+                                            <option value="cat_2">second cat</option>
+                                        </select>
+                                      </div>
+                                      <div class="form-group">
+                                        <label>Product Brand <small>(required)</small></label>
+                                        <select name="product_brand" type="text" class="form-control">
+                                            <option value="brand_1">first brand</option>
+                                            <option value="brand_2">second brand</option>
+                                        </select>
                                       </div>
                                   </div>
                                   <div class="col-sm-10 col-sm-offset-1">
@@ -100,42 +110,21 @@
                                   </div>
                               </div>
                             </div>
-                            <div class="tab-pane" id="account">
-                                <h4 class="info-text"> What are you doing? (checkboxes) </h4>
+                            <div class="tab-pane active" id="description">
                                 <div class="row">
-
-                                    <div class="col-sm-10 col-sm-offset-1">
-                                        <div class="col-sm-4">
-                                            <div class="choice" data-toggle="wizard-checkbox">
-                                                <input type="checkbox" name="jobb" value="Design">
-                                                <div class="icon">
-                                                    <i class="fa fa-pencil"></i>
-                                                </div>
-                                                <h6>Design</h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="choice" data-toggle="wizard-checkbox">
-                                                <input type="checkbox" name="jobb" value="Code">
-                                                <div class="icon">
-                                                    <i class="fa fa-terminal"></i>
-                                                </div>
-                                                <h6>Code</h6>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="choice" data-toggle="wizard-checkbox">
-                                                <input type="checkbox" name="jobb" value="Develop">
-                                                <div class="icon">
-                                                    <i class="fa fa-laptop"></i>
-                                                </div>
-                                                <h6>Develop</h6>
-                                            </div>
-
-                                        </div>
+                                    <h4 class="info-text"> Drop us a small description </h4>
+                                    <div class="col-sm-6 col-sm-offset-1">
+                                         <div class="form-group">
+                                            <label>Boat description</label>
+                                            <textarea class="form-control valid" placeholder="" rows="9" aria-invalid="false">                                            </textarea>
+                                          </div>
                                     </div>
-
+                                    <div class="col-sm-4">
+                                         <div class="form-group">
+                                            <label>Example</label>
+                                            <p class="description">"The boat really nice name is recognized as being a really awesome boat. We use it every sunday when we go fishing and we catch a lot. It has some kind of magic shield around it."</p>
+                                          </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="address">

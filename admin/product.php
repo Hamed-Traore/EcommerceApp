@@ -1,7 +1,7 @@
 <?php 
 include('../settings/core.php');
 include ('../functions/select_product_function.php');
-Check_login();
+
 ?>
 <!DOCTYPE html>
 <!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
@@ -62,7 +62,7 @@ Check_login();
                             echo '      <td>'.$row['product_image'].'</td>';
                             echo '      <td>'.$row['product_keywords'].'</td>';
                             echo '      <td style="display:flex; justify-content: space-between;"><a href="update_product.php?product_id='.$row['product_id'].'"class="btn btn-primary">Update</a>
-                                        <a href="../functions/delete_function.php?id='.$row['product_id'].'" class="btn btn-danger">Delete</a></td>';
+                                        <a href="../functions/delete_function.php?product_id='.$row['product_id'].'" class="btn btn-danger">Delete</a></td>';
                             //echo ' <td><input type="button" value="Update" name="Update" onclick="validate('.$row['pid'].')" class="btn btn-primary">  
                             //<input type="button" value="Delete" name="Delete" onclick="validate('.$row['pid'].')" class="btn btn-danger">';
                             echo '</tr>'; 

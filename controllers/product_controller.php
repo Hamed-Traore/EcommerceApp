@@ -33,10 +33,10 @@ function update_brand_controller($brand_id,$brand_name)
 }
 
 //delete brand
-function delete_controller_brand($id)
+function delete_band_controller($id)
 {
     $delete= new product_class();
-    // return $delete->delete_brand($id);
+     return $delete->delete_brand($id);
 }
 
 
@@ -70,6 +70,13 @@ function update_category_controller($category_id,$category_name)
     return $update->update_category($category_id,$category_name);
 }
 
+// delete category
+function delete_category_controller($id)
+{
+    $delete= new product_class();
+    return $delete->delete_category($id);
+}
+
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 // add product
 function add_product_controller($product_title,$product_price,$product_brand,$product_cat,$product_desc,$product_keywords)
@@ -94,6 +101,12 @@ function update_product_controller($product_id,$product_title,$product_price,$pr
 {
     $update= new product_class();
     return $update->update_product($product_id,$product_title,$product_price,$product_brand,$product_cat,$product_desc,$product_keywords);
+}
+//delete product
+function delete_product_controller($id)
+{
+    $delete= new product_class();
+    return $delete->delete_product($id);
 }
 
 

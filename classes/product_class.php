@@ -1,6 +1,11 @@
 <?php
 
 require ('../settings/db_class.php');
+/**
+ *@author Hamed Traore
+ *@version 1.1
+ */
+
 class product_class extends db_connection
 {
     //add to the brand table
@@ -27,6 +32,12 @@ class product_class extends db_connection
         $sql="UPDATE `brands` SET `brand_name`='$brand_name' WHERE `brand_id`='$brand_id'";
         return $this->db_query($sql);
     }
+    // delete brand
+    function delete_brand($id)
+    {
+        $sql="DELETE FROM `brands` WHERE `brand_id`='$id'";
+        return $this->db_query($sql);
+    }
 
     //-----------------------------------------------------------------------------------------------------------------------------------
     //add to the category table
@@ -51,6 +62,13 @@ class product_class extends db_connection
     function update_category($category_id,$category_name)
     {
         $sql="UPDATE `categories` SET `cat_name`='$category_name' WHERE `cat_id`='$category_id'";
+        return $this->db_query($sql);
+    }
+
+    // delete category
+    function delete_category($id)
+    {
+        $sql="DELETE FROM `categories` WHERE `cat_id`='$id'";
         return $this->db_query($sql);
     }
 
@@ -81,6 +99,12 @@ class product_class extends db_connection
         SET `product_cat`='$product_cat',`product_brand`='$product_brand',`product_title`='$product_title',
         `product_price`='$product_price',`product_desc`='$product_desc',`product_keywords`='$product_keywords' 
         WHERE `product_id`=$product_id";
+        return $this->db_query($sql);
+    }
+    //delete product
+    function delete_product($id)
+    {
+        $sql="DELETE FROM `products` WHERE `product_id`='$id'";
         return $this->db_query($sql);
     }
 
